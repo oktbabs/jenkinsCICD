@@ -23,7 +23,7 @@ pipeline {
 
                          }
                         steps {
-                               echo " Hello Timmy"
+                               echo " Hello Timmy, man"
                               }
                      }
          stage('Four'){
