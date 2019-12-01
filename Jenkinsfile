@@ -7,14 +7,14 @@ pipeline {
                          echo " Hi, This is Timmy form LablAn Technlogies Limited !"
 
                          }
-                     } 
+                     }
 
          stage('Two'){
                   steps {
                          input("Do you want to proceed ?")
 
                          }
-                     } 
+                     }
          stage('Three'){
                   when {
                          not {
@@ -25,8 +25,8 @@ pipeline {
                         steps {
                                echo " Hello"
                               }
-                     } 
-         stage(Four'){
+                     }
+         stage('Four'){
                   parallel {
                     stage('Unit Test'){
                                    steps{
@@ -37,7 +37,7 @@ pipeline {
                     stage('Integration Test'){
                             agent {
                                     docker {
-                                             reusenode false
+                                             reuseNode true	
                                              image 'ubuntu'
                                            }
                                     }
@@ -46,9 +46,10 @@ pipeline {
                                           echo " Running the INTEGRATION TEST !!! "
                                         }
                                       }
-                           } 
+                           }
                     }
 
 
-         }   
+         }
 }
+                                                                               
