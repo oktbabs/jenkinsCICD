@@ -4,7 +4,7 @@ pipeline {
           {
          stage('One'){
                   steps {
-                         echo " Hi, This is Timmy form LablAn Technlogies Limited !"
+                         echo " Hi, This is Timmy form Lablan Technlogies Limited !"
 
                          }
                      }
