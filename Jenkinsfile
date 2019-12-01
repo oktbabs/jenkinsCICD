@@ -31,7 +31,7 @@ pipeline {
                     stage('Unit Test'){
                                    steps{
 
-                                          echo " Running the UNIT TEST !!! "
+                                          echo " Running the UNIT TEST START !!! "
                                         }
                                       }
                     stage('Integration Test'){
